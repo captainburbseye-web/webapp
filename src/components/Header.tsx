@@ -49,7 +49,7 @@ export const Header = () => (
         >
           <a href="/book" role="menuitem"><span class="signal-active"></span>Studio & Rehearsal</a>
           <a href="/contact?service=av" role="menuitem">AV Services (Enquiry)</a>
-          <a href="/contact?service=venue" role="menuitem">Venue Hire (Enquiry)</a>
+          <a href="/workshop-cafe" role="menuitem" style="background: #E89B3C; color: #000; font-weight: 700; border-top: 1px solid #C47E28; border-bottom: 1px solid #C47E28;">WORKSHOP CAFÉ</a>
           <a href="/contact?service=repairs" role="menuitem">Repairs (Enquiry)</a>
         </div>
       </div>
