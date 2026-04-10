@@ -132,6 +132,35 @@ export const HomePage = () => (
       </div>
     </section>
 
+    {/* BOOTH HIRE — COWLEY ROAD */}
+    <section class="rack-unit device-booth-hire rack-module">
+      <div class="rack-unit-header">
+        <div class="rack-unit-led">
+          <span class="led yellow"></span>
+        </div>
+        <h2 class="rack-unit-title">BOOTH HIRE — COWLEY ROAD</h2>
+      </div>
+
+      <div class="rack-unit-content">
+        <p style="margin-bottom: 1.5rem; color: rgba(245, 245, 245, 0.85);">
+          Two private isolation booths available for dry hire at our Cowley Road headquarters. Ideal for solo vocals, voiceover, podcasting, and focused monitoring work.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+          <div style="border: 1px solid rgba(244, 208, 63, 0.3); padding: 1rem;">
+            <p style="font-family: 'Oswald', sans-serif; font-size: 0.875rem; color: #F4D03F; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;">SMALL VOCAL BOOTH</p>
+            <p style="font-size: 0.875rem; color: rgba(245, 245, 245, 0.75);">Single private workspace · Dry hire</p>
+          </div>
+          <div style="border: 1px solid rgba(244, 208, 63, 0.3); padding: 1rem;">
+            <p style="font-family: 'Oswald', sans-serif; font-size: 0.875rem; color: #F4D03F; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;">LARGE ISOLATION BOOTH</p>
+            <p style="font-size: 0.875rem; color: rgba(245, 245, 245, 0.75);">Adam Audio monitoring · Podcast · Practice</p>
+          </div>
+        </div>
+        <div style="text-align: center;">
+          <a href="/book/booth-hire" class="cta-button cta-button-primary">VIEW BOOTHS & BOOK</a>
+        </div>
+      </div>
+    </section>
+
     {/* WORKSHOP CAFÉ - MOVED UP (was position 5, now position 4) */}
     <section class="rack-unit device-cafe">
       <div class="rack-unit-header">

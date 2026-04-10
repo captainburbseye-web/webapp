@@ -1283,6 +1283,119 @@ app.get('/book/tape', (c) => {
   )
 })
 
+// BOOTH HIRE INFO & BOOKING PAGE
+app.get('/book/booth-hire', (c) => {
+  return c.render(
+    <>
+      <BuildStatusBanner />
+      <Header />
+
+      {/* PAGE HEADER */}
+      <section class="rack-unit device-booth-hire rack-module" style="border-left: 3px solid #F4D03F;">
+        <div class="rack-unit-header">
+          <div class="rack-unit-led">
+            <span class="led yellow"></span>
+          </div>
+          <h2 class="rack-unit-title" style="color: #F4D03F;">BOOTH HIRE — COWLEY ROAD</h2>
+        </div>
+        <div class="rack-unit-content">
+          <p style="margin-bottom: 0.5rem; font-family: 'JetBrains Mono', monospace; font-size: 0.875rem; color: rgba(245, 245, 245, 0.6);">
+            118 Cowley Road, Oxford OX4 1JE
+          </p>
+          <p style="color: rgba(245, 245, 245, 0.85); line-height: 1.7; margin-bottom: 0;">
+            Two private isolation booths available for dry hire at our Cowley Road headquarters.
+            Both spaces are acoustically treated and ready to use without an engineer.
+            Ideal for solo vocals, voiceover, podcasting, and focused monitoring sessions.
+          </p>
+        </div>
+      </section>
+
+      {/* SMALL VOCAL BOOTH */}
+      <section class="rack-unit rack-module" style="border-left: 3px solid #F4D03F;">
+        <div class="rack-unit-header">
+          <div class="rack-unit-led">
+            <span class="led yellow"></span>
+          </div>
+          <h2 class="rack-unit-title">SMALL VOCAL BOOTH</h2>
+        </div>
+        <div class="rack-unit-content">
+          <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.8125rem; color: #F4D03F; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem;">
+            Single Private Workspace · Dry Hire
+          </p>
+          <ul style="list-style: none; padding: 0; margin-bottom: 1.75rem; color: rgba(245, 245, 245, 0.85);">
+            <li style="margin-bottom: 0.5rem;">→ Acoustically treated vocal booth</li>
+            <li style="margin-bottom: 0.5rem;">→ Suitable for one person or two vocalists</li>
+            <li style="margin-bottom: 0.5rem;">→ Voiceover, solo tracking, spoken word</li>
+            <li style="margin-bottom: 0.5rem;">→ Dry hire — no engineer included</li>
+            <li style="margin-bottom: 0;">→ Cowley Road only</li>
+          </ul>
+          <div style="text-align: center;">
+            <a
+              href="#SMALL_BOOTH_SQUARE_LINK"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cta-button cta-button-primary"
+              style="border-color: #F4D03F; color: #F4D03F; background: rgba(244, 208, 63, 0.08);"
+            >
+              BOOK SMALL VOCAL BOOTH
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* LARGE ISOLATION BOOTH */}
+      <section class="rack-unit rack-module" style="border-left: 3px solid #F4D03F;">
+        <div class="rack-unit-header">
+          <div class="rack-unit-led">
+            <span class="led yellow"></span>
+          </div>
+          <h2 class="rack-unit-title">LARGE ISOLATION BOOTH</h2>
+        </div>
+        <div class="rack-unit-content">
+          <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.8125rem; color: #F4D03F; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem;">
+            Monitoring · Podcast · Practice · Dry Hire
+          </p>
+          <ul style="list-style: none; padding: 0; margin-bottom: 1.75rem; color: rgba(245, 245, 245, 0.85);">
+            <li style="margin-bottom: 0.5rem;">→ Adam Audio monitors with subwoofer</li>
+            <li style="margin-bottom: 0.5rem;">→ Suitable for podcasting and instrument practice</li>
+            <li style="margin-bottom: 0.5rem;">→ Monitoring sessions and critical listening</li>
+            <li style="margin-bottom: 0.5rem;">→ Dry hire — no engineer included</li>
+            <li style="margin-bottom: 0;">→ Cowley Road only</li>
+          </ul>
+          <div style="text-align: center;">
+            <a
+              href="#LARGE_BOOTH_SQUARE_LINK"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cta-button cta-button-primary"
+              style="border-color: #F4D03F; color: #F4D03F; background: rgba(244, 208, 63, 0.08);"
+            >
+              BOOK LARGE ISOLATION BOOTH
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* BOOKING NOTE */}
+      <section class="rack-unit" style="border-left: 3px solid rgba(244, 208, 63, 0.3);">
+        <div class="rack-unit-content">
+          <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.8125rem; color: rgba(245, 245, 245, 0.6); line-height: 1.6; margin: 0;">
+            Both booths are available at 118 Cowley Road only. Booking is handled via Square.
+            If you need an engineer or a full recording session, see{' '}
+            <a href="/studio" style="color: #F4D03F; text-decoration: none;">Studio Sessions</a>.
+          </p>
+        </div>
+      </section>
+
+      <Footer />
+    </>,
+    {
+      title: 'Booth Hire | Cowley Road Studios Oxford',
+      description: 'Dry hire isolation booths at Cowley Road Studios. Small vocal booth and large isolation booth with Adam Audio monitoring. Book online via Square.',
+    }
+  )
+})
+
 // 6. Book Equipment Hire
 app.get('/book/hire', (c) => {
   return c.render(
