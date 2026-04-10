@@ -170,6 +170,36 @@ export const HomePage = () => (
       </div>
     </section>
 
+    {/* WHO WE ARE */}
+    <section class="rack-unit device-who-we-are rack-module">
+      <div class="rack-unit-header">
+        <div class="rack-unit-led">
+          <span class="led green"></span>
+        </div>
+        <h2 class="rack-unit-title">WHO WE ARE</h2>
+      </div>
+
+      <div class="rack-unit-content">
+        <p style="margin-bottom: 1.5rem; font-size: 1.0625rem; font-weight: 600; color: rgba(245, 245, 245, 0.95); line-height: 1.6;">
+          An evolving creative ecosystem at the heart of Oxford's music scene.
+        </p>
+
+        <p style="margin-bottom: 1.25rem; color: rgba(245, 245, 245, 0.85); line-height: 1.7;">
+          Cowley Road Studios operates two studio sites, a flagship creative hub, and a growing network of technical and community services. Our Cowley Road headquarters features five purpose-built rooms, the Workshop Café, and a flexible venue space for hire, while our Cricket Road location houses a fully equipped professional studio.
+        </p>
+
+        <p style="margin-bottom: 2rem; color: rgba(245, 245, 245, 0.85); line-height: 1.7;">
+          From recording and rehearsal to venue hire, maintenance, and technical upgrades, CRS supports artists, organisations, and local venues across Oxfordshire.
+        </p>
+
+        <div style="border-left: 3px solid var(--crs-gold); padding-left: 1.25rem; margin-top: 0.5rem;">
+          <p style="font-family: 'Oswald', sans-serif; font-size: 1.125rem; font-weight: 700; color: var(--crs-gold); text-transform: uppercase; letter-spacing: 0.06em; margin: 0;">
+            Grassroots Infrastructure for the Oxford Music Scene.
+          </p>
+        </div>
+      </div>
+    </section>
+
     {/* PUBLIC ACCESS - CONDENSED */}
     <section class="rack-unit device-community">
       <div class="rack-unit-header">
